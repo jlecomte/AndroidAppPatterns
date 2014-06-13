@@ -32,7 +32,10 @@
         android:layout_marginLeft="16dp"
         android:layout_toRightOf="@+id/tag2TextView"
         android:hint="@string/tagHintString"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:background ="#0000FF"
+        android:textColor="#FFFFFF" 
+        />
 
     <TextView
         android:id="@+id/titleTextView"

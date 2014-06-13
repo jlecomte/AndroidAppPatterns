@@ -1,5 +1,7 @@
 package net.julienlecomte.apppatterns;
 
+import java.util.ArrayList;
+
 import android.app.Activity;
 import android.app.ActionBar;
 import android.app.Fragment;
@@ -9,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 import android.os.Build;
 
 public class StreamActivity extends Activity {
@@ -17,11 +20,19 @@ public class StreamActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_stream);
+		populateLinkList();
 
 		if (savedInstanceState == null) {
 			getFragmentManager().beginTransaction()
 					.add(R.id.container, new PlaceholderFragment()).commit();
 		}
+	}
+
+	private void populateLinkList() {
+		ArrayList<Link> links = Link.getLinks();
+		CustomLinkAdapter adapter = new CustomLinkAdapter(this, links);
+		ListView listView = (ListView) findViewById(R.id.lvLinks);
+		listView.setAdapter(adapter);
 	}
 
 	@Override
