@@ -23,7 +23,7 @@ public class Link {
 		links.add(new Link("Yahoo", "www.yahoo.com", "search", "news", "sports"));
 		links.add(new Link("The Verge", "www.theverge.com", "news", "rumors", "technology"));
 		links.add(new Link("Github", "www.github.com", "code", "iOS", "android"));
-		return null;
+		return links;
 	}
 
 }

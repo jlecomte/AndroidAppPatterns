@@ -10,7 +10,9 @@
         android:layout_alignLeft="@+id/domainTextView"
         android:layout_below="@+id/domainTextView"
         android:hint="@string/tagHintString"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+        android:textAppearance="?android:attr/textAppearanceSmall" 
+        android:background ="#0000FF"
+        android:textColor="#FFFFFF" />
 
     <TextView
         android:id="@+id/tag2TextView"
@@ -21,7 +23,9 @@
         android:layout_marginLeft="16dp"
         android:layout_toRightOf="@+id/tag1TextView"
         android:hint="@string/tagHintString"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+        android:textAppearance="?android:attr/textAppearanceSmall" 
+        android:background ="#0000FF"
+        android:textColor="#FFFFFF" />
 
     <TextView
         android:id="@+id/tag3TextView"
@@ -46,7 +50,8 @@
         android:layout_marginLeft="26dp"
         android:layout_marginTop="18dp"
         android:hint="@string/titleHintString"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        />
 
     <TextView
         android:id="@+id/domainTextView"
@@ -55,6 +60,7 @@
         android:layout_alignLeft="@+id/titleTextView"
         android:layout_below="@+id/titleTextView"
         android:hint="@string/domainHintString"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        />
 
 </RelativeLayout>
